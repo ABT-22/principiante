@@ -1,15 +1,15 @@
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #e0f2e9;
+    background: linear-gradient(to right, #b5e7a0, #86af49);
     color: #2c3e50;
     text-align: center;
-    transition: background-color 0.5s ease, color 0.5s ease;
+    transition: all 0.5s ease;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #a8dadc;
+    background: rgba(255, 255, 255, 0.8);
     padding: 20px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 0 0 15px 15px;
@@ -33,12 +33,13 @@ nav a {
     font-weight: bold;
     padding: 10px 15px;
     border-radius: 8px;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 nav a:hover {
     background-color: #6ab04c;
     color: white;
+    transform: scale(1.1);
 }
 
 .container {
@@ -49,9 +50,10 @@ nav a:hover {
 
 .sidebar {
     width: 250px;
-    background-color: #a8dadc;
+    background: rgba(255, 255, 255, 0.8);
     padding: 20px;
     border-radius: 10px;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
 .sidebar ul {
@@ -69,21 +71,37 @@ nav a:hover {
     font-weight: bold;
     display: block;
     padding: 10px;
-    background-color: #6ab04c;
+    background: #6ab04c;
     border-radius: 8px;
     text-align: center;
+    transition: all 0.3s ease;
 }
 
 .sidebar a:hover {
-    background-color: #4a7c30;
+    background: #4a7c30;
     color: white;
+    transform: scale(1.05);
 }
 
 .content {
     flex: 1;
     padding: 20px;
-    background-color: white;
+    background: rgba(255, 255, 255, 0.9);
     border-radius: 15px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
     margin-left: 20px;
+    transition: all 0.3s ease;
+}
+
+.project {
+    margin-bottom: 20px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project:hover {
+    transform: scale(1.02);
 }
